@@ -1,0 +1,14 @@
+@page "/technician"
+@page "/technician/{Id:guid}"
+@rendermode InteractiveServer
+@inject IDispatchApiClient Api
+
+<PageTitle>Technician</PageTitle>
+
+<h1>Technician</h1>
+
+@* TODO(#3): pick technician (no auth in MVP), list my jobs, buttons Start / Done. *@
+
+@code {
+    [Parameter] public Guid? Id { get; set; }
+}

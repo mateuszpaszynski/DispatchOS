@@ -1,0 +1,12 @@
+@page "/jobs/{Id:guid}"
+@inject IDispatchApiClient Api
+
+<PageTitle>Job status</PageTitle>
+
+<h1>Job status</h1>
+
+@* TODO(#3): show status, assigned technician and estimated time (PlannedStart). *@
+
+@code {
+    [Parameter] public Guid Id { get; set; }
+}
